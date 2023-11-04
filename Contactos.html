@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a nuestro contacto</title>
+    <link rel="stylesheet" href="cdnjs/reset.css">
+    <link rel="stylesheet" href="style.producto.css">
+    <script type="text/javascript">
+        alert('Bienvenidos');
+    </script>
+</head>
+<body>
+    <!--aqui esta nuestro en cavezodo de  principal de la pagina -->
+    <header>
+        <div class="Caja">
+           <h1><img src="Producto/descarga_barba.jpg" alt="Esta imagen es de barberia Alura"></h1>
+    
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Producto.html">Productos</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+             </nav>
+        </div>
+        </header>
+        <!--este es nuestro cuelpo principal de  donde vamos hacer el formulario de la paigina -->
+         <main>
+           <form > 
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido"  class="Input_padron" required placeholder="Nombre completo">
+             
+            <label for="correoElectronico">Correo Electronico</label>
+            <input type="email" id="correoElectronico" class="Input_padron" required placeholder="Email@dominio.com">
+             
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono"  class="Input_padron" required placeholder="(xxx)(xxx)(xxx)">
+
+            <!--Aqui tenemos una caja de texto para escribir cual quier mensaje que queramos-->
+            <label for="mensaje">Mensaje ?</label>
+            <textarea cols="70" rows="10" id="mensaje"  class="Input_padron"></textarea>
+             <!--esta etiqute fielset es para grupar item dentro del mismo bloque -->
+            <fieldset>
+             <legend>Como le gustaria que lo contactemos?</legend> 
+            <label for="Radio_Email"><input type="radio" name="contacto" value="email" id="Radio_Email">Email</label>
+    
+            <label for="Radio_Telefono"><input type="radio" name="contacto" value="telefono" id="Radio_Telefono">Telefono</label>
+            
+            <label for="Radio_whatsapp"><input type="radio" name="contacto" value="whatsapp" id="Radio_whatsapp" checked>Whatsapp</label>
+            
+            </fieldset>
+ 
+            
+             <!--Aqui creamos un selecionador para hacer la seleccion en que horario quiere ser atendido-->
+            <fieldset>
+                <!--esta legend etiquita de contenido que habre y que ciera-->
+            <legend>En que horario quiere ser Atendido ? </legend>
+            <select>
+                <option>Mañana</option>
+                <option>Tader</option>
+                <option >Noche</option>
+            </select>
+            </fieldset>
+
+            <!--hicimos un checkbox o seleccionador -->
+            <label  class="Checkbox"><input type="checkbox" checked>Le gustaria reciber novedades de la Barberia Alura</label>
+            <!--Aqui creamos un boton o sibmit para nuestro formulario de enviar -->
+            <input type="submit" value="Enviar Formulario" class="Enviar_Boton">
+           </form>
+            <!--tenes una tabla con puesta por filas y colucnas-->
+           <table>
+            <!-- esta Son las filas-->
+            <thead>  <!--este es el encavesado de la tabla-->
+               <tr>
+                <!--esta son las colucnas-->
+                <th>Dias</th>
+                <th>Horarios</th>
+               </tr>
+            </thead>
+              <!--este es el cuelpo de la tabla -->
+            <tbody>
+               <tr>
+                <td>Lunes</td>
+                <td>8am -- 9pm</td>
+               </tr>
+
+               <tr>
+                <td>Miercoles</td>
+                <td>8am -- 9pm</td>
+               </tr>
+
+               <tr>
+                <td>Viernes</td>
+                <td>8am -- 9pm</td>
+               </tr>
+            </tbody>
+           </table>
+         </main>
+         <!--este es nuestro pie de la pigina donde pasamos una imagen para darle formato al pie -->
+        <footer>
+            <img src="Producto/descarga_barba.jpg" alt="Esta imagen es de barberia Alura">
+            <p class="Copyrighit">&copy Copyrighit Barberia Alura _2023</p>
+        </footer>
+</body>
+</html>
